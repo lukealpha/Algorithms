@@ -6,32 +6,31 @@
 #include <math.h>
 #include <string.h>
 using namespace std;
+
 struct Graph{
-    int capture[5][5];
-};
-struct Node{
     int x,y,value;
-    Graph graph;
+    int graph[5][5];
     int step = 0;
     
+    
 };
+map<Graph,int> used;
 bool operator< (Node a, Node b){
     return a.value > b.value;
 }
-map<Node,bool> used;
-Graph std;
 char hexx[20] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G'};
-//string make_route(Node x){
-//    string returnValue;
-//    for(int i = 1; i <= 4; i ++){
-//        for (int j = 1; j <= 4; j ++) {
-//
-//            returnValue += hexx[x.graph[i][j]];
-//        }
-//    }
-//    //cout<<returnValue<<endl;;
-//    return returnValue;
-//}
+string make_route(Node x){
+    string returnValue;
+    for(int i = 1; i <= 4; i ++){
+        for (int j = 1; j <= 4; j ++) {
+            
+            returnValue += hexx[x.graph[i][j]];
+        }
+    }
+    //cout<<returnValue<<endl;;
+    return returnValue;
+}
+
 int H(Node x){
     int ans = 0;
     int tx[20]={4,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4};
