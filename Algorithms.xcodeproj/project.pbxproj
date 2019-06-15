@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0C176922B4BF0700FD87A2 /* 16宫格.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C176822B4BF0700FD87A2 /* 16宫格.cpp */; };
 		4E229D8822AB7E8E0099F037 /* TestEnv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E229D8722AB7E8E0099F037 /* TestEnv.cpp */; };
 		4E229D9022AB82040099F037 /* 九宫格.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E229D8F22AB82040099F037 /* 九宫格.cpp */; };
 		4E229D9B22AB96710099F037 /* 八数码问题.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E229D9A22AB96710099F037 /* 八数码问题.cpp */; };
@@ -14,6 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4E0C176422B4BF0700FD87A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		4E229D7E22AB7E6A0099F037 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E0C176622B4BF0700FD87A2 /* 16宫格 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "16宫格"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0C176822B4BF0700FD87A2 /* 16宫格.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "16宫格.cpp"; sourceTree = "<group>"; };
 		4E229D8022AB7E6A0099F037 /* TestEnv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestEnv; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E229D8722AB7E8E0099F037 /* TestEnv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestEnv.cpp; sourceTree = "<group>"; };
 		4E229D8D22AB82040099F037 /* 九宫格 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "九宫格"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E0C176322B4BF0700FD87A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E229D7D22AB7E6A0099F037 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +121,7 @@
 				4E229D8022AB7E6A0099F037 /* TestEnv */,
 				4E229D8D22AB82040099F037 /* 九宫格 */,
 				4E229D9822AB96710099F037 /* 八数码问题 */,
+				4E0C176622B4BF0700FD87A2 /* 16宫格 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +141,7 @@
 				4E229D8722AB7E8E0099F037 /* TestEnv.cpp */,
 				4E229D8F22AB82040099F037 /* 九宫格.cpp */,
 				4E229D9A22AB96710099F037 /* 八数码问题.cpp */,
+				4E0C176822B4BF0700FD87A2 /* 16宫格.cpp */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -128,6 +149,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E0C176522B4BF0700FD87A2 /* 16宫格 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0C176C22B4BF0700FD87A2 /* Build configuration list for PBXNativeTarget "16宫格" */;
+			buildPhases = (
+				4E0C176222B4BF0700FD87A2 /* Sources */,
+				4E0C176322B4BF0700FD87A2 /* Frameworks */,
+				4E0C176422B4BF0700FD87A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "16宫格";
+			productName = "16宫格";
+			productReference = 4E0C176622B4BF0700FD87A2 /* 16宫格 */;
+			productType = "com.apple.product-type.tool";
+		};
 		4E229D7F22AB7E6A0099F037 /* TestEnv */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E229D8422AB7E6A0099F037 /* Build configuration list for PBXNativeTarget "TestEnv" */;
@@ -204,6 +242,10 @@
 			attributes = {
 				ORGANIZATIONNAME = lukealpha;
 				TargetAttributes = {
+					4E0C176522B4BF0700FD87A2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					4E229D7F22AB7E6A0099F037 = {
 						CreatedOnToolsVersion = 10.2.1;
 						ProvisioningStyle = Automatic;
@@ -235,11 +277,20 @@
 				4E229D7F22AB7E6A0099F037 /* TestEnv */,
 				4E229D8C22AB82040099F037 /* 九宫格 */,
 				4E229D9722AB96710099F037 /* 八数码问题 */,
+				4E0C176522B4BF0700FD87A2 /* 16宫格 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E0C176222B4BF0700FD87A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0C176922B4BF0700FD87A2 /* 16宫格.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E229D7C22AB7E6A0099F037 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +326,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4E0C176A22B4BF0700FD87A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4E0C176B22B4BF0700FD87A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		4E229D8522AB7E6A0099F037 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +518,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E0C176C22B4BF0700FD87A2 /* Build configuration list for PBXNativeTarget "16宫格" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0C176A22B4BF0700FD87A2 /* Debug */,
+				4E0C176B22B4BF0700FD87A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4E229D8422AB7E6A0099F037 /* Build configuration list for PBXNativeTarget "TestEnv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
