@@ -5,13 +5,14 @@
 #include <map>
 #include <math.h>
 #include <string.h>
+#include <iostream>
 using namespace std;
 map<string,int> used;
 struct Node{
     int x,y,value;
     int graph[4][4];
     int step;
-    
+
 };
 bool operator< (Node a, Node b){
     return a.value > b.value;
