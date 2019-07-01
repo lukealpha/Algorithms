@@ -7,9 +7,22 @@
 //
 
 #include <iostream>
-
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+int list[1010];
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int n;
+    scanf("%d",&n);
+    for (int i = 1; i <= n; i ++) {
+        scanf("%d",&list[i]);
+    }
+    int x;
+    scanf("%d",&x);
+    for (int i = 1; i <= n; i ++) {
+        if(i == x)
+            continue;
+        printf("%d ",list[i]);
+    }
     return 0;
 }
